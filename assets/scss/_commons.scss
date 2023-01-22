@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap');
+
+$verde_header: rgba(0, 255, 50,0.6);
+$marron_footer: rgba(255, 162, 0, 0.6);
+$rojo_encabezados: rgba(255, 0, 0, 0.5);
+$rojo_instrucciones: rgba(255, 0, 0, 0.7);
+$blanco_hover: rgb(255, 255, 255);
+$negro_hover: rgba(0, 0, 0, 0.5);
+$rojo_header: rgba(255, 29, 29, 0.5);
+
+
+
+body {
+    background: url(../imágenes/descarga.png);
+    background-repeat: repeat;
+    background-size: auto;
+    margin: 0;
+    padding: 0;
+}
+
+#contenedor {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "main"
+        "main"
+        "footer"
+    ;
+}

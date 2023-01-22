@@ -1,0 +1,49 @@
+@import '_commons';
+
+// Estilo general del Header
+
+#header{
+    grid-area: header;
+    // height: 20vh;
+}
+
+.navbar__container{
+    display: none;    
+}
+
+.header--fondo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: $rojo_header;
+    height: 5em;
+    align-items: center;
+}
+
+.header__logo {
+    margin: 20px;
+}
+
+#header {
+    div {
+        a {
+            img {
+                height: 5em;
+                border-radius: 2.5em;
+            }
+        }
+    }
+}
+
+.nav{
+    justify-self: end;
+            ul {
+                li {
+                    display: inline-block;
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+}

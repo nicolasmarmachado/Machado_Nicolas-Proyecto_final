@@ -1,0 +1,223 @@
+@import '_commons';
+
+/* Este es el estilo de MAIN */
+
+#main {
+    display: flex;
+    grid-area: main;
+    justify-content: center;
+
+    section {
+        h1 {
+            text-align: center;
+        }
+    }
+}
+/* index.html */
+
+.bienvenido {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__section__index--descripcion {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.main__section__index--imagen {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    scale: 0.8;
+    border-radius: 20px;
+}
+
+.main__section__index--texto {
+    width: 50%;
+    align-self: center;
+    font-size: 12px;
+}
+
+/* HorariosCLASES.html */
+
+.main__horarios {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: auto;
+    height: 100%;
+    justify-content: flex-start;
+    margin: 0px auto auto auto;
+}
+
+.main__horarios--titulo {
+    margin: 0 auto;
+    grid-area: titulo;
+}
+
+.main__horarios--categorias {
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+    grid-area: categorias;
+    border: 3px solid $verde_header;
+    border-radius: 20px; 
+
+    margin: 20px;
+    ul {
+        padding: 0px;
+        li {
+            list-style: none;
+            padding: 3px;
+            border-radius: 5px;
+            margin: 5px auto 5px auto;
+            &:hover {
+                color: $blanco_hover;
+                background-color: $rojo_encabezados;
+            }
+        }
+    }
+}
+
+.main__horarios--turnos {
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+    grid-area: turnos;
+    border: 3px solid $verde_header;
+    margin: 20px;
+    border-radius: 20px; 
+
+    ul {
+        padding: 0px;
+        li {
+            list-style: none;
+            padding: 3px;
+            border-radius: 5px;
+            margin: 5px auto 5px auto;
+            &:hover {
+                color: $blanco_hover;
+                background-color: $negro_hover;
+            }
+        }
+    }
+}
+
+/* Estilo de turnosCanchas.html */
+
+.horarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.horarios__instrucciones {
+    text-align: center;
+    font-family: 'Unbounded', cursive;
+    font-size: 20px;
+    position: relative;
+    animation: balanceo 4s infinite;
+    transition: 0.3s;
+    color: $rojo_instrucciones;
+}
+
+@keyframes balanceo {
+    0% {
+        left: -5px;
+    }
+
+    25% {
+        left: 5px;
+        top: 0px;
+    }
+
+    50% {
+        left: 5px;
+        top: 5px;
+    }
+
+    75% {
+        left: -5px;
+        top: 5px;
+    }
+
+    100% {
+        left: -5px;
+        top: 0px
+    }
+}
+
+.horarios--tipoCancha,
+.horarios--horarioCancha,
+.horarios--horasCancha2 {
+    border: 3px solid $marron_footer;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px auto 5px auto;
+}
+
+.horarios--tipoCancha2 {
+    li {
+        list-style: none;
+    }}
+
+.horarios--tipoCancha2 li:hover {
+    background-color: $rojo_encabezados;
+}
+
+/* Estilo torneos.html */
+
+.main__torneos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main__torneos--federados{
+    border: 3px solid $verde_header;
+    border-radius: 10px;
+    margin: 20px;
+    height: 150px;
+    h2 {
+        text-align: center;
+    }
+    li{
+    list-style: none;
+    }
+}
+
+.main__torneos--recreativos {
+    @extend .main__torneos--federados;
+}
+
+/* Estilos contacto.html */
+
+.main__contacto--contenedor {
+    margin: 0px 50px 50px;
+}
+
+//MIXINS (prueba de uso de mixins)
+@mixin flex($flexd) {
+    flex-direction: $flexd;
+ }
+ .main__contacto--form, .main__contacto--datos {
+    @include flex(column);
+ }
+
+.main__contacto--form {
+    display: flex;
+    border-radius: 10px;
+    border: 3px solid $marron_footer;
+    background-color: $marron_footer;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.main__contacto--datos {
+    display: flex;
+}

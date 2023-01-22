@@ -1,0 +1,56 @@
+@import '_commons';
+
+/*Este es el estilo GENERAL de FOOTER*/
+
+#footer {
+    display: flex;
+    height: 20vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $marron_footer;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    align-self: end;
+}
+
+footer {
+    div {
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+footer {
+    div {
+        div {
+            display: flex;
+            justify-content: center;
+
+            a {
+                img {
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}
+
+.img__redes {
+    width: 26px;
+    height: 26px;
+}
+
+.img_footer{
+    width: 64px;
+    height: 64px;
+    border-radius: 55px;
+}
+
+.nav-2{
+    padding: 4px 16px;
+}

@@ -1,0 +1,218 @@
+@import '_commons';
+
+@media only screen and (max-width: 530px) {
+
+    .main__section__index--descripcion {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .main__section__index--imagen {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        scale: 0.7;
+    }
+
+    .main__section__index--texto {
+        width: 50%;
+        align-self: center;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    #header{
+    background-color: $rojo_header;
+    }
+
+    .navbar__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* logo y hamburg corren juntas */
+    .navbar__start{
+        display: none;
+    }
+}
+@media only screen and (min-width:768px) {
+
+    /* Estilos index.html */
+
+    #contenedor {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "main"
+            "main"
+            "footer"
+    }    
+    .main__section__index--descripcion {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px;
+        position: relative;
+    }
+
+    .main__section__index--imagen {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        scale: 1;
+        &:hover{
+            opacity: 0.07;
+            transition: opacity 1000ms;
+        }
+    }
+
+    .main__section__index--texto {
+        // width: 50%;
+        // align-self: center;
+        // font-size: 14px;
+        position: absolute;
+        z-index: -1;
+    }
+
+    /* Estilos horariosClases.html */
+
+    .main__horarios {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main__horarios--cajas {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 100%;
+        align-items: center;
+    }
+
+    .main__horarios--categorias {
+        height: 250px;
+        padding: 0px 100px;
+        border: 3px solid $verde_header;
+        border-radius: 20px;
+    }
+
+    .main__horarios--turnos {
+        border: $verde_header;
+        height: 250px;
+        border: 3px solid $verde_header;
+        border-radius: 20px;    
+        padding: 0px 100px; 
+    }
+
+    /* turnosCanchas.html */
+
+    .horarios {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 60px 1fr;
+    }
+
+    .container__horariosCanchas {
+        display: flex;
+        grid-column: 1/4;
+        justify-content: space-around;
+    }
+
+    .horarios__instrucciones {
+        grid-column: 1/4;
+        margin: auto;
+        font-size: 18px;
+    }
+
+    .horarios--tipoCancha {
+        border: 3px solid $marron_footer;
+        height: auto;
+        padding: 30px;
+        margin: 5px;
+        flex-direction: column;
+    }
+
+    .horarios--horarioCancha {
+        border: 3px solid $marron_footer;
+        height: auto;
+        padding: 30px;
+        margin: 5px;
+        flex-direction: column;
+
+    }
+
+    // .horarios--tipoCancha2 
+
+    .horarios--horasCancha2 {
+        border: 3px solid $marron_footer;
+        text-align: center;
+        height: auto;
+        padding: 87px 50px 50px 50px;
+        margin: 5px;
+        flex-direction: column;
+
+        li {
+            text-align: center;
+            &:hover{
+                color: $blanco_hover;
+            }
+        }
+
+    }
+
+    /* Estilo torneos.html */
+
+    .main__torneos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .main__torneos--federados {
+        border: 3px solid $verde_header;
+        text-align: center;
+        height: 300px;
+        margin: 20px;
+        padding: 50px 100px;
+    }
+
+    .main__torneos--recreativos {
+        border: 3px solid $verde_header;
+        text-align: center;
+        height: 300px;
+        margin: 20px;
+        padding: 50px 100px;
+    }
+
+    /* Estilos contacto.html */
+
+    .main__contacto--form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border: 3px solid $marron_footer;
+        background-color: $marron_footer;
+    }
+
+    .main__contacto--datos {
+        margin: 20px;
+    }
+
+    // Estilo FOOTER
+
+    #footer{
+        align-self: end;
+    }
+}

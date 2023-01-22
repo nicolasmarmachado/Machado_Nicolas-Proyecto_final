@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnos de uso de Canchas | Tenis CAL</title>
+    <link rel="stylesheet" href="../assets/scss/main.css">
+    <link rel="shortcut icon" href="../assets/imágenes/raqueta-pelota.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap" rel="stylesheet">
+    <meta name="description" content="Acá encontrarás todos los turnos disponibles para que puedas hacer uso de las canchas del club">
+    <meta name="keywords" content="tenis, CAL, club atlético libertad, turnos, turnos disponibles">
+</head>
+<body>
+    <div id="contenedor">    
+        <header id="header">
+
+            <!-- Inicio Barra de navegación Mobile -->
+
+            <div>
+                <nav class="navbar__container">
+                    <div><a href="../index.html"><img src="../assets/imágenes/logo_cal.jpg" alt="logo_CAL"> </a></div>
+                    <div class="navbar">                    
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                                aria-controls="offcanvasNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>                    
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                                <div class="offcanvas-head  er">
+                                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="horariosClases.html">Horarios de
+                                                Clases</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="turnosCanchas.html">Turnos de Canchas</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="torneos.html">Torneos</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="contacto.html">Contactanos</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        
+            <!-- Inicio Barra de navegación Desktop -->
+
+            <div class="navbar__start">
+                <div class="header--fondo">
+                    <div class="header__logo">
+                        <a href="../index.html"><img src="../assets/imágenes/logo_cal.jpg" alt="logo_CAL"> </a>
+                    </div>            
+                    <nav>
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="horariosClases.html">Horarios de
+                                    Clases</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="turnosCanchas.html">Turnos de Canchas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="torneos.html">Torneos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html" tabindex="-1" aria-disabled="true">Contactanos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    
+        <main id="main">
+            <section class="horariosqq">
+                <div class="horarios__instrucciones"><p>Turnos para el uso de canchas: Seleccione en primer lugar la cancha y luego el día que desea. Los turnos disponibles estarán en verde</p>
+                </div>
+                <div class="container__horariosCanchas">
+                    <div class="horarios--tipoCancha">
+                        <h2>
+                            Tipo de cancha
+                        </h2>
+                        <ul class="horarios--tipoCancha2">
+                            <li>Polvo de ladrillo 1</li>
+                            <li>Polvo de ladrillo 2</li>
+                            <li>Polvo de ladrillo 3</li>
+                            <li>Cemento 1</li>
+                            <li>Cemento 2</li>
+                        </ul>
+                    </div>
+                    <div class="horarios--horarioCancha">
+                        <div>
+                            <h2>Horarios Diponibles</h2>
+                        </div>
+                        <div class="horarios--horarioCancha2">
+                            <div>
+                                <ul class="horarios--tipoCancha2">
+                                    <li>Lunes</li>
+                                    <li>Martes</li>
+                                    <li>Miercoles</li>
+                                    <li>Jueves</li>
+                                    <li>Viernes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horarios--horasCancha2">
+                        <div>
+                            <ul class="horarios--tipoCancha2">
+                                <li>16:00</li>
+                                <li>17:30</li>
+                                <li>19:00</li>
+                                <li>20:30</li>
+                                <li>22:00</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    
+        <footer id="footer">
+            <div>
+                <a href="../index.html"><img src="../assets/imágenes/logo_cal.jpg" alt="logo_CAL" class="img_footer"> </a>
+            </div>
+            <div>
+                <a class="nav-link active" aria-current="page" href="horariosClases.html">Horarios de Clases</a>
+                <a class="nav-link" href="turnosCanchas.html">Turnos de Canchas</a>
+                <a class="nav-link" href="torneos.html">Torneos</a>
+                <a class="nav-link" href="contacto.html" tabindex="-1" aria-disabled="true">Contactanos</a>
+            </div>           
+            <div class="logos_redes">
+                <H2>Nuestras Redes</H2>
+                <div>
+                    <a href="https://www.facebook.com/tenis.clubatleticolibertad" target="_blank"> <img
+                            src="../assets/imágenes/Facebook_f_logo_(2019).svg.jpg" alt="Facebook" class="img__redes"></a>
+                    <a href="https://www.instagram.com/tenis_cal/" target="_blank"><img
+                            src="../assets/imágenes/Instagram_logo_2016.svg.jpg" alt="Instagram" class="img__redes"></a>    
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
