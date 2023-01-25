@@ -1,6 +1,11 @@
-@import '_commons';
+@import 'commons';
 
 @media only screen and (max-width: 530px) {
+
+    // Estilo HEADER
+    .nav-link{
+        color: black;
+    }
 
     .main__section__index--descripcion {
         width: 100%;
@@ -30,6 +35,10 @@
     background-color: $rojo_header;
     }
 
+    .nav-link{
+        color: black;
+    }
+
     .navbar__container{
         display: flex;
         flex-direction: row;
@@ -40,8 +49,17 @@
     .navbar__start{
         display: none;
     }
+
+    .nav-link{
+        color: black;
+    }
 }
 @media only screen and (min-width:768px) {
+
+    // Estilo HEADER
+    .nav-link{
+        color: black;
+    }
 
     /* Estilos index.html */
 
@@ -56,8 +74,14 @@
             "main"
             "footer"
     }    
+
+    .cajas__descripcion{
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     .main__section__index--descripcion {
-        width: 100%;
+        width: 50%;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -78,12 +102,11 @@
     }
 
     .main__section__index--texto {
-        // width: 50%;
-        // align-self: center;
-        // font-size: 14px;
         position: absolute;
         z-index: -1;
-    }
+        height: 187px;
+        width: 300px;
+   }
 
     /* Estilos horariosClases.html */
 
@@ -103,14 +126,14 @@
     .main__horarios--categorias {
         height: 250px;
         padding: 0px 100px;
-        border: 3px solid $verde_header;
+        border: 3px solid $marron_footer;
         border-radius: 20px;
+        cursor: pointer;
     }
 
     .main__horarios--turnos {
-        border: $verde_header;
         height: 250px;
-        border: 3px solid $verde_header;
+        border: 3px solid $marron_footer;
         border-radius: 20px;    
         padding: 0px 100px; 
     }
@@ -149,11 +172,14 @@
         padding: 30px;
         margin: 5px;
         flex-direction: column;
-
     }
 
-    // .horarios--tipoCancha2 
+    .horarios--tipoCancha2 {
+        li:hover {
+            cursor: pointer;
+        }
 
+    }
     .horarios--horasCancha2 {
         border: 3px solid $marron_footer;
         text-align: center;
@@ -173,6 +199,21 @@
 
     /* Estilo torneos.html */
 
+    .main__torneos{
+        display: flex; 
+        flex-direction: row;
+    }
+
+    .main__torneos__instrucciones {
+        text-align: center;
+        font-family: $fuente_titulos;
+        font-size: 20px;
+        position: relative;
+        animation: balanceo 4s infinite;
+        transition: 0.3s;
+        color: $rojo_instrucciones;
+    }
+
     .main__torneos {
         display: flex;
         flex-direction: row;
@@ -181,15 +222,20 @@
     }
 
     .main__torneos--federados {
-        border: 3px solid $verde_header;
+        border: 3px solid $marron_footer;
         text-align: center;
         height: 300px;
         margin: 20px;
         padding: 50px 100px;
+        ul{
+            li{
+                cursor: pointer;
+            }
+        }
     }
 
     .main__torneos--recreativos {
-        border: 3px solid $verde_header;
+        border: 3px solid $marron_footer;
         text-align: center;
         height: 300px;
         margin: 20px;

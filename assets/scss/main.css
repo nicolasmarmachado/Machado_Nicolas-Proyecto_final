@@ -1,16 +1,21 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Unbounded:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Unbounded:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Unbounded:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Unbounded:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Unbounded:wght@300&display=swap");
 body {
-  background: url(../imágenes/descarga.png);
+  background: url(../imágenes/descarga1.png);
   background-repeat: repeat;
   background-size: auto;
   margin: 0;
@@ -23,7 +28,7 @@ body {
   grid-template-areas: "header" "main" "main" "main" "footer"; }
 
 body {
-  background: url(../imágenes/descarga.png);
+  background: url(../imágenes/descarga1.png);
   background-repeat: repeat;
   background-size: auto;
   margin: 0;
@@ -46,7 +51,7 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  background-color: rgba(255, 29, 29, 0.5);
+  background-color: rgba(180, 2, 2, 0.7);
   height: 5em;
   align-items: center; }
 
@@ -64,8 +69,11 @@ body {
     .nav ul li a {
       text-decoration: none; }
 
+.nav-link {
+  color: black; }
+
 body {
-  background: url(../imágenes/descarga.png);
+  background: url(../imágenes/descarga1.png);
   background-repeat: repeat;
   background-size: auto;
   margin: 0;
@@ -89,6 +97,9 @@ body {
 .bienvenido {
   display: flex;
   flex-direction: column; }
+
+.main__section__index--saludo {
+  font-family: "Merriweather", serif; }
 
 .main__section__index--descripcion {
   width: 100%;
@@ -121,7 +132,7 @@ body {
   margin: 0px auto auto auto; }
 
 .main__horarios--titulo {
-  margin: 0 auto;
+  margin: 10px auto;
   grid-area: titulo; }
 
 .main__horarios--categorias {
@@ -129,7 +140,7 @@ body {
   text-decoration: none;
   text-align: center;
   grid-area: categorias;
-  border: 3px solid rgba(0, 255, 50, 0.6);
+  border: 3px solid rgba(255, 162, 0, 0.6);
   border-radius: 20px;
   margin: 20px; }
   .main__horarios--categorias ul {
@@ -141,14 +152,15 @@ body {
       margin: 5px auto 5px auto; }
       .main__horarios--categorias ul li:hover {
         color: white;
-        background-color: rgba(255, 0, 0, 0.5); }
+        background-color: rgba(255, 0, 0, 0.5);
+        cursor: pointer; }
 
 .main__horarios--turnos {
   font-size: 1em;
   text-decoration: none;
   text-align: center;
   grid-area: turnos;
-  border: 3px solid rgba(0, 255, 50, 0.6);
+  border: 3px solid rgba(255, 162, 0, 0.6);
   margin: 20px;
   border-radius: 20px; }
   .main__horarios--turnos ul {
@@ -170,7 +182,7 @@ body {
 
 .horarios__instrucciones {
   text-align: center;
-  font-family: 'Unbounded', cursive;
+  font-family: "Merriweather", serif;
   font-size: 20px;
   position: relative;
   animation: balanceo 4s infinite;
@@ -193,6 +205,10 @@ body {
     left: -5px;
     top: 0px; } }
 
+.horariosCancha__titulo {
+  margin: 10px auto;
+  border: 2px solid black; }
+
 .horarios--tipoCancha,
 .horarios--horarioCancha,
 .horarios--horasCancha2 {
@@ -202,7 +218,8 @@ body {
   margin: 5px auto 5px auto; }
 
 .horarios--tipoCancha2 li {
-  list-style: none; }
+  list-style: none;
+  cursor: pointer; }
 
 .horarios--tipoCancha2 li:hover {
   background-color: rgba(255, 0, 0, 0.5); }
@@ -214,7 +231,7 @@ body {
   justify-content: space-around; }
 
 .main__torneos--federados, .main__torneos--recreativos {
-  border: 3px solid rgba(0, 255, 50, 0.6);
+  border: 3px solid rgba(255, 162, 0, 0.6);
   border-radius: 10px;
   margin: 20px;
   height: 150px; }
@@ -242,7 +259,7 @@ body {
   display: flex; }
 
 body {
-  background: url(../imágenes/descarga.png);
+  background: url(../imágenes/descarga1.png);
   background-repeat: repeat;
   background-size: auto;
   margin: 0;
@@ -290,7 +307,7 @@ footer div div {
   padding: 4px 16px; }
 
 body {
-  background: url(../imágenes/descarga.png);
+  background: url(../imágenes/descarga1.png);
   background-repeat: repeat;
   background-size: auto;
   margin: 0;
@@ -303,6 +320,8 @@ body {
   grid-template-areas: "header" "main" "main" "main" "footer"; }
 
 @media only screen and (max-width: 530px) {
+  .nav-link {
+    color: black; }
   .main__section__index--descripcion {
     width: 100%;
     display: flex;
@@ -322,24 +341,34 @@ body {
 
 @media only screen and (max-width: 675px) {
   #header {
-    background-color: rgba(255, 29, 29, 0.5); }
+    background-color: rgba(180, 2, 2, 0.7); }
+  .nav-link {
+    color: black; }
   .navbar__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
   /* logo y hamburg corren juntas */
   .navbar__start {
-    display: none; } }
+    display: none; }
+  .nav-link {
+    color: black; } }
 
 @media only screen and (min-width: 768px) {
+  .nav-link {
+    color: black; }
   /* Estilos index.html */
   #contenedor {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto 1fr 1fr 1fr 1fr;
     grid-template-areas: "header" "main" "main" "main" "footer"; }
+  .cajas__descripcion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
   .main__section__index--descripcion {
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -356,7 +385,9 @@ body {
       transition: opacity 1000ms; }
   .main__section__index--texto {
     position: absolute;
-    z-index: -1; }
+    z-index: -1;
+    height: 187px;
+    width: 300px; }
   /* Estilos horariosClases.html */
   .main__horarios {
     display: flex;
@@ -370,12 +401,12 @@ body {
   .main__horarios--categorias {
     height: 250px;
     padding: 0px 100px;
-    border: 3px solid rgba(0, 255, 50, 0.6);
-    border-radius: 20px; }
+    border: 3px solid rgba(255, 162, 0, 0.6);
+    border-radius: 20px;
+    cursor: pointer; }
   .main__horarios--turnos {
-    border: rgba(0, 255, 50, 0.6);
     height: 250px;
-    border: 3px solid rgba(0, 255, 50, 0.6);
+    border: 3px solid rgba(255, 162, 0, 0.6);
     border-radius: 20px;
     padding: 0px 100px; }
   /* turnosCanchas.html */
@@ -403,6 +434,8 @@ body {
     padding: 30px;
     margin: 5px;
     flex-direction: column; }
+  .horarios--tipoCancha2 li:hover {
+    cursor: pointer; }
   .horarios--horasCancha2 {
     border: 3px solid rgba(255, 162, 0, 0.6);
     text-align: center;
@@ -417,17 +450,30 @@ body {
   /* Estilo torneos.html */
   .main__torneos {
     display: flex;
+    flex-direction: row; }
+  .main__torneos__instrucciones {
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-size: 20px;
+    position: relative;
+    animation: balanceo 4s infinite;
+    transition: 0.3s;
+    color: rgba(255, 0, 0, 0.7); }
+  .main__torneos {
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center; }
   .main__torneos--federados, .main__torneos--recreativos {
-    border: 3px solid rgba(0, 255, 50, 0.6);
+    border: 3px solid rgba(255, 162, 0, 0.6);
     text-align: center;
     height: 300px;
     margin: 20px;
     padding: 50px 100px; }
+    .main__torneos--federados ul li, .main__torneos--recreativos ul li {
+      cursor: pointer; }
   .main__torneos--recreativos {
-    border: 3px solid rgba(0, 255, 50, 0.6);
+    border: 3px solid rgba(255, 162, 0, 0.6);
     text-align: center;
     height: 300px;
     margin: 20px;

@@ -1,4 +1,4 @@
-@import '_commons';
+@import 'commons';
 
 // Estilo general del Header
 
@@ -46,4 +46,8 @@
                     }
                 }
             }
+}
+
+.nav-link{
+    color: black;
 }
