@@ -59,14 +59,9 @@
     margin: 0px auto auto auto;
 }
 
-.main__horarios--titulo {
-    margin: 10px auto;
-    grid-area: titulo;
-}
 
 .main__horarios--categorias {
     font-size: 1em;
-    text-decoration: none;
     text-align: center;
     grid-area: categorias;
     border: 3px solid $marron_footer;
@@ -79,7 +74,6 @@
             padding: 3px;
             border-radius: 5px;
             margin: 5px auto 5px auto;
-
             &:hover {
                 color: $blanco_hover;
                 background-color: $rojo_encabezados;
@@ -89,28 +83,14 @@
     }
 }
 
-.main__horarios--turnos {
-    font-size: 1em;
-    text-decoration: none;
-    text-align: center;
-    grid-area: turnos;
-    border: 3px solid $marron_footer;
-    margin: 20px;
-    border-radius: 20px; 
+.main__horarios--titulo {
+    margin: 10px auto;
+    grid-area: titulo;
+}
 
-    ul {
-        padding: 0px;
-        li {
-            list-style: none;
-            padding: 3px;
-            border-radius: 5px;
-            margin: 5px auto 5px auto;
-            &:hover {
-                color: $blanco_hover;
-                background-color: $negro_hover;
-            }
-        }
-    }
+.main__horarios--turnos {
+    @extend .main__horarios--categorias;
+    grid-area: turnos;
 }
 
 /* Estilo de turnosCanchas.html */
@@ -159,7 +139,6 @@
 
 .horariosCancha__titulo{
     margin: 10px auto;
-    border: 2px solid black;
 }
 .horarios--tipoCancha,
 .horarios--horarioCancha,
@@ -171,13 +150,18 @@
 }
 
 .horarios--tipoCancha2 {
-    li {
+    padding: 0px;
+        li {
         list-style: none;
-        cursor: pointer;
-    }}
-
-.horarios--tipoCancha2 li:hover {
-    background-color: $rojo_encabezados;
+        padding: 3px;
+        border-radius: 5px;
+        margin: 5px auto 5px auto;        
+        &:hover {
+            background-color: $rojo_encabezados;
+            color: $blanco_hover;
+            cursor: pointer;
+        }
+    }
 }
 
 /* Estilo torneos.html */
@@ -188,22 +172,46 @@
     justify-content: space-around;
 }
 
-.main__torneos--federados{
+.main__torneos__instrucciones {
+    font-family: $fuente_titulos;
+    font-size: 18px;
+    position: relative;
+    animation: balanceo 4s infinite;
+    transition: 0.3s;
+    color: $rojo_instrucciones;
+    text-align: center;
+    margin: 10px;
+}
+
+.main__torneos--federados {
     border: 3px solid $marron_footer;
+    text-align: center;
     border-radius: 10px;
     margin: 20px;
-    height: 150px;
     h2 {
         text-align: center;
     }
-    li{
-    list-style: none;
+    ul{
+        padding: 0px;
+        li {
+            list-style: none;
+            padding: 3px;
+            border-radius: 5px;
+            margin: 5px auto 5px auto;
+            &:hover {
+                color: $blanco_hover;
+                background-color: $rojo_encabezados;
+                cursor: pointer;
+            }
+        }
     }
+
 }
 
 .main__torneos--recreativos {
     @extend .main__torneos--federados;
 }
+
 
 /* Estilos contacto.html */
 
@@ -212,6 +220,7 @@
 }
 
 //MIXINS (prueba de uso de mixins)
+
 @mixin flex($flexd) {
     flex-direction: $flexd;
  }
